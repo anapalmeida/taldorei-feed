@@ -1,0 +1,29 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  align-items: flex-start;
+  
+  max-width: 70rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+
+}
+
+.content {
+  width: fit-content;
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    margin: 0 1rem;
+  }
+}
